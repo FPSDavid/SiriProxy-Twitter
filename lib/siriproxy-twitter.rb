@@ -21,7 +21,7 @@ class SiriProxy::Plugin::Twitter < SiriProxy::Plugin
     object = SiriAddViews.new
     object.make_root(last_ref_id)
     answer = SiriAnswer.new("Tweet", [
-      SiriAnswerLine.new('logo','http://cl.ly/1l040J1A392n0M1n1g35/content'), # this just makes things looks nice, but is obviously specific to my username
+      SiriAnswerLine.new('logo','http://f.cl.ly/items/2A203f2z3B0A36403h0F/siriproxy-twitterpic.jpg'), # this just makes things looks nice, but is obviously specific to my username
       SiriAnswerLine.new(tweetText)
     ])
     object.views << SiriAnswerSnippet.new([answer])
